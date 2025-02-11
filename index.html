@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RainSyntax</title>
+  <link rel="icon" type="image/svg+xml"
+    href="https://raw.githubusercontent.com/NSTechBytes/rainsyntax/main/images/RainSyntax.png" />
+
+  <meta name="description"
+    content="RainSyntax is a powerful VS Code extension that provides syntax highlighting, snippets, and auto-refresh for Rainmeter skin development.">
+  <meta name="keywords"
+    content="Rainmeter, VS Code, Rainmeter extension, Rainmeter syntax highlighting, Rainmeter snippets, Rainmeter skin development, RainSyntax">
+  <meta name="author" content="NSTechBytes">
+
+  <meta property="og:title" content="RainSyntax - Best VS Code Extension for Rainmeter Skins">
+  <meta property="og:description"
+    content="Enhance your Rainmeter skin development with RainSyntax – featuring syntax highlighting, snippets, and auto-refresh.">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/NSTechBytes/rainsyntax/main/images/RainSyntax.png">
+  <meta property="og:url" content="https://nstechbytes.pages.dev/">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RainSyntax - Best VS Code Extension for Rainmeter">
+  <meta name="twitter:description"
+    content="Speed up Rainmeter skin development with RainSyntax, offering powerful features like auto-refresh, snippets, and syntax highlighting.">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/NSTechBytes/rainsyntax/main/images/RainSyntax.png">
+  <meta name="twitter:site" content="@YourTwitterHandle">
+
+
+  <link rel="canonical" href="https://nstechbytes.pages.dev/">
+
+
+  <link rel="icon" href="https://raw.githubusercontent.com/NSTechBytes/rainsyntax/main/images/RainSyntax.png"
+    type="image/x-icon">
+
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Structured Data for better search ranking -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RainSyntax",
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "DeveloperTools",
+    "description": "RainSyntax is a VS Code extension that enhances Rainmeter skin development with features like syntax highlighting, snippets, and auto-refresh.",
+    "softwareVersion": "0.0.6",
+    "image": "https://raw.githubusercontent.com/NSTechBytes/rainsyntax/main/images/RainSyntax.png",
+    "url": "https://nstechbytes.pages.dev/",
+    "author": {
+      "@type": "Person",
+      "name": "NSTechBytes"
+    }
+  }
+  </script>
+</head>
+
+
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-content">
+          <div class="nav-brand">
+            <i data-lucide="droplet" class="icon brand-icon"></i>
+            <span class="brand-text">RainSyntax</span>
+          </div>
+          <button class="nav-link" onclick="toggleDocs()">Documentation</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content">
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="gradient-text">RainSyntax</h1>
+            <p class="hero-description">
+              The ultimate VS Code extension for Rainmeter development. Write better code faster with advanced syntax
+              highlighting, real-time preview, and powerful tools.
+            </p>
+            <div class="button-group">
+              <a href="https://marketplace.visualstudio.com/items?itemName=NSTechBytes.rainsyntax"
+                class="btn btn-primary">
+                <i data-lucide="download" class="icon"></i>
+                Download Extension
+              </a>
+              <a href="https://github.com/NSTechBytes/rainsyntax" class="btn btn-secondary">
+                <i data-lucide="github" class="icon"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Features Section -->
+      <section class="section bg-dark">
+        <div class="container">
+          <h2 class="section-title fade-in-up">Powerful Features for Rainmeter Development</h2>
+          <div class="features-grid stagger-fade-in">
+            <div class="feature-card">
+              <i data-lucide="code-2" class="icon feature-icon"></i>
+              <h3>Syntax Highlighting</h3>
+              <p>Advanced syntax highlighting for Rainmeter code with support for all measure types and bangs.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="refresh-cw" class="icon feature-icon"></i>
+              <h3>Auto-Refresh Skin</h3>
+              <p>Automatically refresh your Rainmeter skin as you code for instant feedback.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="settings" class="icon feature-icon"></i>
+              <h3>GUI Customization</h3>
+              <p>Customize your coding environment with flexible GUI options.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="info" class="icon feature-icon"></i>
+              <h3>Hover Information</h3>
+              <p>Get detailed information about measures and bangs by hovering over code.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="palette" class="icon feature-icon"></i>
+              <h3>Color Picker</h3>
+              <p>Built-in color picker for easy color selection and management.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="terminal" class="icon feature-icon"></i>
+              <h3>Code Formatting</h3>
+              <p>Automatic code formatting to maintain consistent style.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Installation Guide -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title fade-in-up">Quick Installation Guide</h2>
+          <div class="installation-steps stagger-fade-in">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Open VS Code</h3>
+                <p>Launch Visual Studio Code on your computer</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Install Extension</h3>
+                <p>Search for "RainSyntax" in the Extensions marketplace and click Install</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Start Coding</h3>
+                <p>Open any .ini or Rainmeter file to start using RainSyntax</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="section bg-dark">
+        <div class="container">
+          <h2 class="section-title fade-in-up">See It in Action</h2>
+          <div class="screenshots-grid stagger-fade-in">
+            <div class="screenshot">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+                alt="Code editor showing syntax highlighting">
+              <p>Syntax Highlighting</p>
+            </div>
+            <div class="screenshot">
+              <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1200&q=80"
+                alt="Color picker interface">
+              <p>Color Picker</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Section -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title fade-in-up">Join the Community</h2>
+          <div class="community-grid stagger-fade-in">
+            <a href="https://github.com/NSTechBytes/rainsyntax" class="community-card">
+              <i data-lucide="github" class="icon community-icon"></i>
+              <h3>GitHub</h3>
+              <p>Contribute, report issues, or explore the code</p>
+            </a>
+            <a href="https://discord.gg/fZejMxtMhf" class="community-card">
+              <i data-lucide="message-circle" class="icon community-icon"></i>
+              <h3>Discord</h3>
+              <p>Join our community for support and discussions</p>
+            </a>
+            <a onclick="toggleDocs()" class="community-card">
+              <i data-lucide="book-open" class="icon community-icon"></i>
+              <h3>Documentation</h3>
+              <p>Comprehensive guides and API reference</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <i data-lucide="droplet" class="icon brand-icon"></i>
+              <span class="brand-text">RainSyntax</span>
+            </div>
+            <div class="footer-links">
+              <a href="https://github.com/NSTechBytes/rainsyntax"><i data-lucide="github" class="icon"></i></a>
+              <a href="https://discord.gg/fZejMxtMhf"><i data-lucide="message-circle" class="icon"></i></a>
+              <a onclick="toggleDocs()"><i data-lucide="book-open" class="icon"></i></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> NS Tech Bytes. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Documentation Page -->
+    <div id="docs-content" class="hidden">
+      <header class="docs-header">
+        <div class="container">
+          <h1>Documentation</h1>
+          <p>Everything you need to know about using RainSyntax</p>
+        </div>
+      </header>
+
+      <div class="container docs-container">
+        <aside class="docs-sidebar">
+          <nav>
+            <ul>
+              <li><a href="#getting-started" class="sidebar-link"><i data-lucide="chevron-right"
+                    class="icon"></i>Getting Started</a></li>
+              <li><a href="#installation" class="sidebar-link"><i data-lucide="chevron-right"
+                    class="icon"></i>Installation</a></li>
+              <li><a href="#features" class="sidebar-link"><i data-lucide="chevron-right" class="icon"></i>Features</a>
+              </li>
+              <li><a href="#configuration" class="sidebar-link"><i data-lucide="chevron-right"
+                    class="icon"></i>Configuration</a></li>
+              <li><a href="#api-reference" class="sidebar-link"><i data-lucide="chevron-right" class="icon"></i>API
+                  Reference</a></li>
+              <li><a href="#examples" class="sidebar-link"><i data-lucide="chevron-right" class="icon"></i>Examples</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <main class="docs-content">
+          <!-- Documentation sections -->
+          <section id="getting-started" class="docs-section">
+            <h2>Getting Started</h2>
+            <p>RainSyntax is a powerful VS Code extension designed to enhance your Rainmeter development experience.</p>
+            <div class="quick-start">
+              <h3>Quick Start</h3>
+              <ol>
+                <li>Install RainSyntax from the VS Code Marketplace</li>
+                <li>Open a Rainmeter .ini file in VS Code</li>
+                <li>Start coding with enhanced features</li>
+              </ol>
+            </div>
+          </section>
+
+          <section id="installation" class="docs-section">
+            <h2>Installation</h2>
+            <p>Follow these steps to install RainSyntax in VS Code:</p>
+            <div class="quick-start">
+              <ol>
+                <li>Open VS Code.</li>
+                <li>Go to the Extensions Marketplace (Ctrl+Shift+X).</li>
+                <li>Search for "RainSyntax" and click Install.</li>
+                <li>Reload VS Code if required.</li>
+                <li>Start using the extension on Rainmeter files.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section id="features" class="docs-section">
+            <h2>Features</h2>
+            <div class="quick-start">
+              <ul>
+                <li><strong>Syntax Highlighting:</strong> Advanced highlighting for Rainmeter syntax.</li>
+                <li><strong>Auto-Refresh Skin:</strong> Automatically refreshes Rainmeter skins while coding.</li>
+                <li><strong>GUI Customization:</strong> Allows users to modify UI settings.</li>
+                <li><strong>Hover Information:</strong> Displays helpful tooltips on Rainmeter elements.</li>
+                <li><strong>Color Picker:</strong> Integrated color picker for easy color selection.</li>
+                <li><strong>Code Formatting:</strong> Ensures clean and consistent code styling.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="configuration" class="docs-section">
+            <h2>Configuration</h2>
+            <p>Customize RainSyntax settings in VS Code by modifying the settings.json file:</p>
+            <div class="quick-start">
+              <pre>
+{
+  "rainsyntax.autoRefresh": true,
+  "rainsyntax.colorPicker": true,
+  "rainsyntax.formatOnSave": true
+}
+  </pre>
+            </div>
+            <p>These options allow you to enable or disable features according to your workflow.</p>
+            <section id="api-reference" class="docs-section">
+              <h2>API Reference</h2>
+              <p>RainSyntax provides an API for advanced integration. Below are some key commands:</p>
+
+              <div class="quick-start">
+                <ul>
+                  <li><code>rainSyntax.toggleAutoRefresh</code> - Toggles AutoRefresh for Rainmeter skins.</li>
+                  <li><code>rainSyntax.changeRainmeterPath</code> - Changes the Rainmeter executable path.</li>
+                  <li><code>rainSyntax.changeRefreshMode</code> - Switches between refreshing all skins or only the
+                    active skin.</li>
+                  <li><code>rainSyntax.openSettings</code> - Opens RainSyntax settings in VS Code.</li>
+                </ul>
+              </div>
+
+              <h3>Configuration Settings</h3>
+              <p>Customize RainSyntax behavior using these settings in <code>settings.json</code>:</p>
+
+              <div class="quick-start">
+                <ul>
+                  <li><code>rainSyntax.autoRefreshOnSave</code> (boolean, default: <code>true</code>) - Automatically
+                    refresh Rainmeter skins when saving an INI or INC file.</li>
+                  <li><code>rainSyntax.refreshMode</code> (string, default: <code>"all"</code>) - Choose between
+                    refreshing all skins or only the specific skin being edited.</li>
+                  <li><code>rainSyntax.rainmeterPath</code> (string, default:
+                    <code>"C:\Program Files\Rainmeter\Rainmeter.exe"</code>) - Path to the Rainmeter executable.</li>
+                </ul>
+              </div>
+            </section>
+
+
+            <section id="examples" class="docs-section">
+              <h2>Examples</h2>
+              <p>Here are some usage examples of RainSyntax:</p>
+
+              <h3>Example 1: Basic Skin</h3>
+              <div class="quick-start">
+                <pre>
+[Rainmeter]
+Update=1000
+
+[MeterText]
+Meter=String
+Text=Hello, World!
+  </pre>
+              </div>
+
+              <h3>Example 2: Using Variables</h3>
+              <div class="quick-start">
+                <pre>
+[Rainmeter]
+Update=1000
+
+[Variables]
+Color=255,255,255
+
+[MeterText]
+Meter=String
+FontColor=#Color#
+  </pre>
+              </div>
+            </section>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
